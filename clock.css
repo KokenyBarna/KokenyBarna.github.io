@@ -1,0 +1,25 @@
+.wrap{
+    text-align: center;
+    padding: 200px 0 0;
+    border: 1px solid black;
+}
+
+#greeting,#clock{
+    font-size: 60px;
+    margin-bottom: 15px;
+
+}
+
+#clock span{
+    border: 1px solid black;
+    display: inline-block;
+    width: 100px;
+    line-height: 100px;
+    background-color: rgb(255, 204, 64);
+    color: white;
+    margin: 0 15px;
+}
+
+#greeting{
+    display: inline-block;
+}
