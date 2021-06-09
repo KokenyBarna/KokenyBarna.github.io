@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Amiri', serif;
+
+}
+
+/*      ---------- háttérkép------------     */
+
+
+body{
+    background: url('mező.jpg');
+    background-size: cover;
+    
+}
+
+
+@media(max-width: 1240px){
+    body{
+
+        background-size:  1700px 1370px;
+    }
+}
+
+
+/*      ---------- tartalom------------     */
+
+
+main #cim{
+    
+    font-family: 'Gabriela', serif;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 120px;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(34, 34, 34);
+    text-align: center;
+    font-size: 100px;
+    letter-spacing: 2px;
+
+}
+
+
+
+/*      ---------- cím aláhúzás------------     */
+#W{
+    border-bottom: solid 5px gold;
+}
+#eb{
+    border-bottom: solid 5px rgb(255, 0, 0);
+}
+#ol{
+    border-bottom: solid 5px rgb(92, 255, 27);
+}
+#dal{
+    border-bottom: solid 5px rgb(47, 203, 250);
+}
+#lin{
+    border-bottom: solid 5px orange;
+}
+#kek{
+    border-bottom: solid 5px rgb(18, 250, 49);
+}
+
+
+/*      ---------- github link------------     */
+
+
+#githubLink{
+    text-decoration: none;
+    background: rgb(22, 139, 248);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    width: 230px;
+    padding: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    text-shadow: 1px 1px 1px rgb(95, 95, 95);
+    justify-content: center;
+    display: flex;
+    transition: 0.5s;
+}
+
+
+#githubLink:hover{
+    text-shadow: none;
+    color: rgb(255, 255, 255);
+    background: rgb(27, 202, 218);
+    transition: 0.5s;
+}
+
+.fa-file-code{
+    font-size: 30px;
+}
+
+
+
+
+
+/*      ---------- menü------------     */
+#myTopnav {
+    
+    background: rgb(57, 151, 240);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0; 
+    z-index: 1;
+}
+
+
+#myTopnav::after{
+    content:'';
+    clear: both;
+    display: table;
+}
+
+#myTopnav .has-submenu{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 17px;
+    padding-left: 17px;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+}
+
+
+#myTopnav a {
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    
+}
+
+
+#myTopnav li:hover{
+    background: rgb(57, 151, 240);
+    color: white;
+    border-radius: 2px;
+   
+}
+
+#myTopnav ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+#myTopnav>ul>li {
+    float: left;
+}
+
+#myTopnav .has-submenu {
+    position: relative;
+}
+
+
+
+#myTopnav .submenu {
+    position: absolute;
+    width: 180px;
+    display: none;
+    margin-top: 15px;
+    
+}
+
+#myTopnav .has-submenu:hover .submenu {
+    display: block;
+    position: absolute;
+    
+}
+
+#myTopnav .submenu a {
+    background: rgb(57, 151, 240);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    
+}
+
+#myTopnav .submenu a:hover {
+    background: rgb(240, 248, 255);
+    color: rgb(83, 83, 83);
+    
+}
+
+
+  /*--------------------fa-bar => open block menu-----------------------*/
+.openbtn{
+    display: none;
+}
+
+.sidebar{
+    display: none;
+}
+
+
+
+
+/*      ---------- Óra------------     */
+
+.wrap{
+    margin-top: 30px;
+    text-align: center;
+    padding: 0px;
+}
+
+#clock{
+    font-size: 30px;
+}
+
+#greeting{
+    font-size: 60px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    display: inline-block;
+}
+
+#clock span{
+    display: inline-block;
+    width: 100px;
+    line-height: 100px;
+    background-color: rgb(151, 26, 63);
+    text-shadow: 1px 1px 1px black;
+    color: white;
+    margin: 0 15px;
+}
+
+#clock #second{
+    margin-right:0px;
+}
+
+#clock span:last-child{
+    background-color: rgb(41, 141, 255);
+    margin-left: 0;
+}
+
+#greeting{
+    animation: greeting 2s ease infinite;
+}
+
+.kettospont{
+    display: inline-block;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+
+/*          responsive nézetek:           */
+
+@media(max-width: 1600px){
+    /*      ---------- Óra------------     */
+
+    
+
+    #clock{
+        font-size: 35px;
+    }
+
+    #greeting{
+        font-size: 60px;
+        
+    }
+
+    #clock span{
+        width: 100px;
+        line-height: 110px;
+        margin: 0 13px;
+    }
+}
+@media(max-width: 684px){
+    .wrap{
+        margin-top: 70px;
+    }
+    
+    #clock{
+        font-size: 28px;
+    }
+    
+    #greeting{
+        font-size: 50px;
+    }
+    
+    #clock span{
+        width: 80px;
+        line-height: 90px;
+        margin: 0 10px;
+    }
+}
+
+@media(max-width: 588px){
+    .wrap{
+        margin-top: 45px;
+    }
+    
+    #clock{
+        font-size: 26px;
+    }
+    
+    #greeting{
+        font-size: 40px;
+        line-height: 60px;
+        margin-bottom: 10px;
+    }
+    
+    #clock span{
+        width: 60px;
+        line-height: 60px;
+        margin: 0 8px;
+    }
+}
+
+
+/* cím és github cím*/
+@media(max-width: 1600px){
+    
+
+    main #cim{
+        margin-top: 150px;
+    }
+    main #githubLink{
+        font-size: 25px;
+        width: 250px;
+        padding: 13px 0px;
+        margin-top: 100px;
+    }
+}
+
+
+@media(max-width: 900px){
+    
+
+    main #cim{
+        font-size: 90px;
+        margin-top: 120px;
+    }
+    main #githubLink{
+        font-size: 22px;
+        width: 255px;
+    }
+}
+@media(max-width: 645px){
+    
+
+    main #cim{
+        font-size: 80px;
+        margin-top: 70px;
+    }
+    
+
+    .fa-file-code{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 570px){
+    
+
+    main #cim{
+        font-size: 70px;
+        margin-top: 50px;
+    }
+   
+
+    .fa-file-code{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 490px){
+    
+
+    main #cim{
+        font-size: 50px;
+    }
+    main #githubLink{
+        font-size: 18px;
+        width: 180px;
+        margin-top: 40px;
+    }
+
+    .fa-file-code{
+        font-size: 20px;
+    }
+}
+
+
+
+
+/*--------------------resp. menü-----------------------*/
+@media(max-width: 1040px){
+    
+      nav .has-submenu{
+           
+            display: none;
+        }
+    
+        #bar{
+            height: 50px;
+            background: rgb(19, 129, 233);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    
+        .openbtn{
+            color: white;
+            font-size: 30px;
+            margin-right: 25px;
+            display: flex;
+        }
+        
+      
+    
+        .sidebar{
+            display: block;
+        }
+    
+        .sidebar {
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 80%;
+            background: rgb(255, 255, 255);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            
+    }
+          
+          .sidebar a {
+            padding: 15px 8px 8px 30px;
+            text-decoration: none;
+            font-size: 25px;
+            color: rgb(68, 165, 255);
+            display: block;
+            line-height: 45px;
+    }
+          
+          .sidebar a:hover {
+            background: white;
+            color: rgb(68, 165, 255);
+          }
+          
+    
+          .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 2px;
+            font-size: 36px;
+            margin-left: 50px;
+          }
+          
+          .menu{
+              border: none;
+              margin-top: 25px;
+          }
+    
+          
+         
+          /*--------------------resp. menü-----------------------*/
+    
+        /*lefele nyíl*/
+    
+        .fa-caret-down {
+            float: right;
+            padding-right: 8px;
+        }
+    
+        .dropdown-container {
+            display: none;
+            padding-left: 25px;
+            background: rgb(255, 255, 255);
+            
+    }
+    
+        .dropdown-container>.dropwItem{
+            font-size: 16px;
+            line-height: 18px;
+            color: rgb(68, 165, 255);
+            
+        }
+          
+          
+          
+    
+          
+        }    
