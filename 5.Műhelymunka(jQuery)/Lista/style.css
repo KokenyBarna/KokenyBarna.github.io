@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+*{
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+
+body {
+
+    background:
+	linear-gradient(
+        90deg,
+		rgb(19, 125, 187),
+		transparent
+	),
+	linear-gradient(
+		rgb(239, 251, 255),
+		transparent
+	),
+	
+	linear-gradient(
+		rgb(44, 195, 255),
+		transparent
+	);
+	
+	
+    background-blend-mode:  color-burn;
+    background-size: 2000px 1400px;
+    background-repeat: no-repeat;
+}
+
+main {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border: solid 1px rgb(24, 165, 231);
+    background: white;
+    border-radius: 10px;
+}
+
+
+
+/*Title*/
+#title {
+    text-align: center;
+    color: rgb(42, 195, 255);
+    font-family: 'Pattaya', sans-serif;
+}
+
+/* input and button*/
+#addList {
+    display: flex;
+    justify-content: center;
+    font-family: 'Pattaya', sans-serif;
+}
+
+#input {
+    border: solid 1px rgb(24, 165, 231);
+}
+
+#addBtn {
+    border: none;
+    background: rgba(24, 165, 231, 0.835);
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+#addBtn:hover {
+    background: rgb(24, 165, 231);
+    color: white;
+}
+
+#input,
+#addBtn {
+    font-size: 25px;
+}
+
+/* List*/
+
+ul {
+    font-size:30px;
+    list-style: none;
+    line-height: 50px;
+    color: rgb(42, 195, 255);
+    font-family: 'Pattaya', sans-serif;
+}
+
+.UlBlue{
+    color: rgb(42, 195, 255);
+}
+
+.UlGrey{
+    color: rgb(215, 215, 216);
+}
+
+
+/*check*/
+.check{
+    margin-top: 10px;
+    font-size:24px !important;
+    color:rgb(163, 163, 163);
+    margin-right: 20px;
+}
+
+#check{
+    float: right;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.check:hover{
+    color:rgb(81, 190, 17);
+}
+
+.CheckGreen{
+    color: rgb(81, 190, 17);
+}
+
+.CheckGrey{
+    color: rgb(163, 163, 163);
+}
+
+/*remove*/
+.trash{
+    margin-top: 10px;
+    font-size:24px !important;
+    color:rgb(255, 113, 113);
+    margin-right: 30px;
+}
+.trash:hover{
+    color:rgb(236, 56, 71);
+    
+}
+
+
+#det{
+    cursor: pointer;
+    float: right;
+    border: none;
+    background: none;
+}
+
+
+@media(max-width: 500px){
+    
+
+    main{
+        width: 340px;
+    }
+    
+    #input,
+    #addBtn {
+        font-size: 17px;
+    }
+
+    
+    ul{
+        font-size: 24px;
+    }
+
+    body {
+
+        background:
+        linear-gradient(
+            90deg,
+            rgb(13, 145, 221),
+            transparent
+        ),
+        linear-gradient(
+            rgb(226, 242, 248),
+            transparent
+        ),
+        linear-gradient(
+            rgb(118, 198, 245),
+            transparent
+        ),
+        
+        linear-gradient(
+            rgb(72, 202, 253),
+            transparent
+        );
+        
+        
+        background-blend-mode:  color-burn;
+        background-size: 500px 1000px;
+        background-repeat: no-repeat;
+
+    }
+   
+}

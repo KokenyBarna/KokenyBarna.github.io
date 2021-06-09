@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+
+
+
+
+
+.container{
+  display: flex;
+  width: 400px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  background:  #ffd62a;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: flex-end;
+  
+}
+
+.item{
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+  background-color: #b02afe;
+}
+
+
+
+
+/*
+.container{
+    display: flex;
+    border: 1px solid black;
+    width: 550px;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; vízszintesen középre
+    align-items: center; függőlegesen középre
+}
+.item{
+    width: 150px;
+    height: 150px;
+}
+
+.green {
+    background-color:  #51d400;
+    border: 1px solid black;
+    
+  }
+.yellow {
+    background-color: #ffd62a;
+    border: 1px solid black;
+  }
+.purple {
+    background-color: #b02afe;
+    border: 1px solid black;
+  }
+
+*/
+
+
+
+

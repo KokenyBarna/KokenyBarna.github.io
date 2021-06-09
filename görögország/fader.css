@@ -1,0 +1,61 @@
+.carousel{
+    
+    width: 100%;
+    height: 100vh;
+    margin: 0px auto 0 auto;
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+
+/*
+@media(orientation: portrait) {
+    .carousel{ height: 42.5vh;}
+}
+*/
+.carousel div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0;
+}
+
+
+
+.carousel div:nth-child(1) { background-image: url('képek/épület.jpg');}
+.carousel div:nth-child(2) { background-image: url('képek/tenger.jpg'); animation-delay: 5s; }
+.carousel div:nth-child(3) { background-image: url('képek/tenger 2.jpg'); animation-delay: 10s; }
+.carousel div:nth-child(4) { background-image: url('képek/város.jpg'); animation-delay: 20s; }
+.carousel div:nth-child(5) { background-image: url('képek/város2.jpg'); animation-delay: 30s; }
+.carousel div:nth-child(6) { background-image: url('képek/oszlop1.jpg'); animation-delay: 40s; }
+
+
+
+/* fader */
+.fader div { animation: fade 50s infinite}
+@keyframes fade{
+    0% {opacity: 0; }
+    10% {opacity: 1;}
+    35% {opacity: 1;}
+    45% {opacity: 0;}
+
+}
+
+/* slider */
+
+.slider div { left: -100%; animation: slide 12s infinite;}
+@keyframes slide{
+    0%     { opacity: 0;}
+    1%     { opacity:1; left: -100%;}
+    6%     { left: 0;}
+    34.5%  { left:0; }
+    39.5%  { opacity: 1; left:100%;}
+    40%    { opacity: 0;}
+}

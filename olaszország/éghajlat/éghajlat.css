@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+
+
+
+body{
+    
+    
+    margin: 0;
+    font-family:'Roboto', sans-serif;
+    background: url('éghajlat háttér.jpg');
+	
+    background-size: cover;
+    
+    
+}
+
+*{
+    box-sizing: border-box
+}
+
+
+/*
+
+wrapper. magában foglalja a headert és a maint: 
+
+*/
+
+.wrapper{
+    max-width: 1000px;
+    
+    margin: 0px auto;
+    
+}
+
+
+/* fel nyíl */
+
+.fel{   
+    text-align: center; 
+}
+
+.fa-arrow-circle-up{
+    color: rgba(78, 120, 128, 0.822);
+    font-size: 84px; 
+    text-align: center;
+    
+}
+.fa-arrow-circle-up:hover{
+    color: rgb(43, 114, 138);
+    font-size: 86px; 
+    text-align: center;
+    
+}
+
+/*
+
+header. háttérkép: 
+
+*/
+
+header{
+    background: url('égh.kép.jpg')no-repeat;
+    background-position:50% 100% ;
+    background-attachment: fixed;
+    background-size: contain;
+    
+    
+    height: 600px;
+    
+    
+    
+    
+    
+}
+
+/*
+
+cím: 
+
+*/
+
+.cím{
+    border-color: rgb(0, 0, 0, 2px 2px 2px);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 30px;
+    
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+   
+    letter-spacing: 4px;
+    font-family:  serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    
+}
+
+/*      ---------- menü------------     */
+#myTopnav {
+    
+    background: rgb(57, 151, 240);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0; 
+    z-index: 1;
+}
+
+
+#myTopnav::after{
+    content:'';
+    clear: both;
+    display: table;
+}
+
+#myTopnav .has-submenu{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 17px;
+    padding-left: 17px;
+    font-size: 22px;
+}
+
+
+#myTopnav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 20px;
+    
+}
+
+
+#myTopnav li:hover{
+    background: rgb(57, 151, 240);
+    color: white;
+    border-radius: 2px;
+   
+}
+
+#myTopnav ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+#myTopnav>ul>li {
+    float: left;
+}
+
+#myTopnav .has-submenu {
+    position: relative;
+}
+
+
+
+#myTopnav .submenu {
+    position: absolute;
+    width: 180px;
+    display: none;
+    margin-top: 15px;
+    
+}
+
+#myTopnav .has-submenu:hover .submenu {
+    display: block;
+    position: absolute;
+    
+}
+
+#myTopnav .submenu a {
+    background: rgb(57, 151, 240);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    
+}
+
+
+#myTopnav .submenu a:hover {
+    background: rgb(240, 248, 255);
+    color: rgb(83, 83, 83);
+    
+}
+
+
+  /*--------------------fa-bar => open block menu-----------------------*/
+.openbtn{
+    display: none;
+}
+
+.sidebar{
+    display: none;
+}
+
+/*
+
+main,  a tartalom: 
+
+*/
+
+main{
+    background: rgb(255, 255, 255);
+    padding: 40px;
+    font-size: 25px;
+}
+
+main p {
+    line-height: 1.5;
+}
+
+main h1 {
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+/*
+
+táblázat: 
+
+*/
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+
+td, th {
+    border: 1px solid #a3a0a0;
+    text-align: left;
+    padding: 8px;
+    
+  }
+
+
+  tr:nth-child(even) {
+    background-color: #f8e990;
+  }
+  tr:nth-child(even):hover {
+    background-color: #ebd455;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #d0ff77;
+  }
+  tr:nth-child(odd):hover {
+    background-color: #a3df35;
+    
+  }
+
+  th, td {
+    padding: 20px;
+  }
+
+table thead .legfelsősor{
+    background-color: #0598bd;
+  }
+
+table thead .legfelsősor:hover{
+    background-color: #1076a5;
+  }
+
+  
+/*görgető*/
+
+::-webkit-scrollbar{
+    width: 15px;
+    height: 0px;
+
+}
+
+
+::-webkit-scrollbar-track{
+    background-color: rgb(135, 139, 145);
+    border: 4px solid rgb(128, 124, 124);
+    box-shadow: inset  0 0 0px 2px  rgba(100, 183, 238, 0);
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:linear-gradient(
+        transparent,
+        #0b81c5,
+        #054970
+    );
+    border-radius: 10px;
+    
+}
+::-webkit-scrollbar-thumb:hover{
+
+    background:linear-gradient(
+        transparent,
+        #1abde6,
+        #054691
+    );
+    border-radius: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	
+	table, thead, tbody, th, td, tr { 
+        display: block; 
+        border-color: #313131;
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	
+	
+	td { 
+		/* Behave  like a "row" */
+		
+		 
+		position: relative;
+		padding-left: 70%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Június"; }
+	td:nth-of-type(2):before { content: "Július"; }
+	td:nth-of-type(3):before { content: "Augusztus"; }
+	
+}
+
+
+
+/*--------------------resp. menü-----------------------*/
+@media(max-width: 1040px){
+    
+    nav .has-submenu{
+         
+          display: none;
+      }
+  
+      #bar{
+          height: 50px;
+          background: rgb(61, 145, 255);
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+      }
+  
+      .openbtn{
+          color: white;
+          font-size: 30px;
+          margin-right: 25px;
+          display: flex;
+      }
+      
+    
+  
+      .sidebar{
+          display: block;
+      }
+  
+      .sidebar {
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 80%;
+          background: rgb(61, 145, 255);
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+          
+  }
+        
+        .sidebar a {
+          padding: 15px 8px 8px 30px;
+          text-decoration: none;
+          font-size: 25px;
+          color: rgb(255, 255, 255);
+          display: block;
+          line-height: 45px;
+  }
+        
+        .sidebar a:hover {
+          background: white;
+          color: rgb(68, 165, 255);
+        }
+        
+  
+        .sidebar .closebtn {
+          position: absolute;
+          top: 0;
+          right: 2px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+        
+        .menu{
+            border: none;
+            margin-top: 25px;
+        }
+  
+        
+       
+        /*--------------------resp. menü-----------------------*/
+  
+      /*lefele nyíl*/
+  
+      .fa-caret-down {
+          float: right;
+          padding-right: 8px;
+      }
+  
+      .dropdown-container {
+          padding-left: 25px;
+          
+  }
+  
+      .dropdown-container>.dropwItem{
+          font-size: 16px;
+          line-height: 18px;
+          
+      }
+        
+        
+        
+  
+        
+      }       

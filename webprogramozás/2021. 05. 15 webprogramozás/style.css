@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+body{
+    background:
+	linear-gradient(
+		rgb(76, 201, 250),
+		transparent
+	),
+	
+	linear-gradient(
+		-90deg,
+		rgb(255, 249, 158),
+		transparent
+	);
+	
+background-blend-mode: screen;
+background-repeat: no-repeat;
+background-size: 2000px 900px;
+}
+
+form{
+    width: 350px;
+    margin: 140px auto;
+    /*border: 1px solid black;*/
+    
+    
+}
+legend{
+    border: 1px solid rgb(133, 229, 241);
+    background: rgb(78, 78, 78);
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family:  'Trebuchet MS';
+}
+
+fieldset{
+    border-left:5px solid rgb(95, 220, 252);
+    border-right:5px solid rgb(253, 78, 78);
+    border-top:5px solid rgb(255, 223, 81);
+    border-bottom:5px solid rgb(150, 255, 89);
+    
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+
+input, label{
+    display: block;
+}
+
+label{
+    position: relative;
+    margin:10px auto 10px 43px ;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input{
+    
+    border: 2px solid rgb(1, 206, 233);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 15px;
+    width: 230px;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+.gomb{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 40px;
+    border: 2px solid rgb(27, 212, 245);
+    
+}
+.gomb:hover{
+    background: rgb(93, 220, 243);
+    font-size: 25px;
+}

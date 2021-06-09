@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olaszország</title>
+    <link rel="stylesheet" href="fontawesome-free-5.13.1-web\css\all.css">
+    <link rel="stylesheet" href="főoldal.css">
+</head>
+
+<body>
+
+
+    <!--alap nav-->
+
+    <nav class="topnav" id="myTopnav">
+
+        <ul>
+            <!--            Főoldal            -->
+            <!--has submenu-->
+            <li class="has-submenu"> <a href="Főoldal.html">Főoldal</a></li>
+
+
+            <!--            Gazdaság            -->
+
+            <!--has submenu-->
+            <li class="has-submenu"><a href="gazdaság/gazdaság-főoldal.html">Gazdaság</a>
+
+                <!-- submenu-->
+                <ul class="submenu">
+
+                    <li><a href="gazdaság/mezőgazdaság/mezőgazdaság.html">Mezőgazdaság</a></li>
+
+                </ul>
+
+            </li>
+
+            <!--            Éghajlat            -->
+
+            <!--has submenu-->
+            <li class="has-submenu"><a href="éghajlat/Éghajlat.html">Éghajlat</a></li>
+
+
+            <!--            Gasztronómia            -->
+
+            <!--has submenu-->
+            <li class="has-submenu"><a href="gasztronómia/gasztronómia.html">Gasztronómia</a>
+                <!-- submenu-->
+                <ul class="submenu">
+                    <li><a href="gasztronómia/receptek/receptek.html">Receptek</a>
+                    </li>
+                </ul>
+            </li>
+
+
+        </ul>
+
+
+    </nav>
+
+
+
+
+    <!--mobil nézet-->
+
+    <div id="mySidebar" class="sidebar">
+        <!--close-->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+        <div class="menu">
+
+            <!--Főoldal-->
+            <a href="Főoldal.html">Főoldal</a>
+            
+            <!--Gazdaság-->
+            <a href="gazdaság/gazdaság-főoldal.html" >Gazdaság <i class="fa fa-caret-down "></i></a>
+            <div class="dropdown-container">
+                 <!--Mezőgazdaság-->
+                <a class="dropwItem" href="gazdaság/mezőgazdaság/mezőgazdaság.html">Mezőgazdaság</a>
+            </div>
+            <!--Éghajlat-->
+            <a href="éghajlat/Éghajlat.html">Éghajlat</a>
+            
+            <!--Gasztronómia-->
+            <a href="gasztronómia/gasztronómia.html">Gasztronómia <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-container">
+                <!--Receptek-->
+                <a class="dropwItem" href="gasztronómia/receptek/receptek.html">Receptek</a>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <!--moblinézet-->
+
+    <!--open-->
+
+    <nav id="main">
+        <!--mobil nézetnél-->
+        <div id="bar">
+            <!-- a bar tartalmazza a hátteret-->
+            <div class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></div>
+            <!-- az openbtn tartalmazza a fa-bar méretét és színét-->
+        </div>
+    </nav>
+
+
+
+
+    <!--                nav vége            -->
+
+
+
+
+    <!-- cím  -->
+    <i class="fas fa-crown"></i>
+    <div class="cím">Olaszország </div>
+    <!-- wrapper  -->
+    <div class="wrapper">
+        <!-- header  -->
+        <header>
+
+        </header>
+        <!-- tartalom  -->
+        <main>
+            <h1>Bevezetés</h1>
+            <p>
+
+                A nagy észak-déli kiterjedés és a domborzati viszonyok miatt Olaszország területén több éghajlat is
+                megtalálható. Általánosságban elmondható, hogy dél felé haladva erősödnek a mediterrán hatások, ami
+                erőteljesen befolyásolja a mezőgazdasági termelés feltételeit is. Emellett a történelmi háttér, azaz a
+                hagyományos birtokszerkezet is befolyásolta, hogy hol, milyen fejlett a mezőgazdaság. A változatos
+                éghajlaton termelt élelmiszer egy igen sokszínű, és világszerte ismert konyhát alapozott meg.
+            </p>
+
+
+            <p>
+                Ezekről lesz szó a továbbiakban:
+            </p>
+
+            <!-- gombos linkek  -->
+            <div class="gombos-linkek">
+
+                <div class="gombos-link1">
+
+                    <ul>
+                        <li>
+                            <a href="gazdaság/gazdaság-főoldal.html"><button>Gazdaság</button></a>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+                <div class="gombos-link2">
+
+                    <ul>
+                        <li>
+                            <a href="éghajlat/Éghajlat.html"><button>Éghajlat</button></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="gombos-link3">
+
+                    <ul>
+                        <li>
+                            <a href="gasztronómia/gasztronómia.html"><button>Gasztronómia</button></a>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+            <!-- tartalom vége  -->
+        </main>
+        <!-- wrapper vége  -->
+    </div>
+
+
+
+
+
+    <script src="menu.js"></script>
+
+
+
+    
+
+
+
+
+</body>
+
+</html>

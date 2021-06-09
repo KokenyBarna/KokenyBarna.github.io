@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+
+
+.container{
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a{
+    align-items: center;
+    font-family: 'Sen', sans-serif;
+    margin: 10px;
+    color:green;
+    display: block;
+}
+
+a:hover{
+    color: lime;
+    text-decoration: none;
+}
+
+/*
+a:visited {
+    
+    color: rgb(55, 231, 231);
+  }
+
+  a:active {
+    color: rgb(194, 32, 80);
+  }
+  */

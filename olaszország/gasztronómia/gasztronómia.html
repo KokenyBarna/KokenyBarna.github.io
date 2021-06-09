@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olaszország</title>
+    <link rel="stylesheet" href="../fontawesome-free-5.13.1-web\css\all.min.css">
+    <link rel="stylesheet" href="gasztronómia.css">
+</head>
+
+<body>
+
+    <section id="section01"> </section>
+
+   <!--alap nav-->
+
+  <nav class="topnav" id="myTopnav">
+
+    <ul>
+      <!--            Főoldal            -->
+      <!--has submenu-->
+      <li class="has-submenu"> <a href="../Főoldal.html">Főoldal</a></li>
+
+
+      <!--            Gazdaság            -->
+
+      <!--has submenu-->
+      <li class="has-submenu"><a href="../gazdaság/gazdaság-főoldal.html">Gazdaság</a>
+
+        <!-- submenu-->
+        <ul class="submenu">
+
+          <li><a href="../gazdaság/mezőgazdaság/mezőgazdaság.html">Mezőgazdaság</a></li>
+
+        </ul>
+
+      </li>
+
+      <!--            Éghajlat            -->
+
+      <!--has submenu-->
+      <li class="has-submenu"><a href="../éghajlat/Éghajlat.html">Éghajlat</a></li>
+
+
+      <!--            Gasztronómia            -->
+
+      <!--has submenu-->
+      <li class="has-submenu"><a href="../gasztronómia/gasztronómia.html">Gasztronómia</a>
+        <!-- submenu-->
+        <ul class="submenu">
+          <li><a href="receptek/receptek.html">Receptek</a>
+          </li>
+        </ul>
+      </li>
+
+
+    </ul>
+
+
+  </nav>
+
+
+
+
+  <!--mobil nézet-->
+
+  <div id="mySidebar" class="sidebar">
+    <!--close-->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+    <div class="menu">
+
+      <!--Főoldal-->
+      <a href="../Főoldal.html">Főoldal</a>
+
+      <!--Gazdaság-->
+      <a href="../gazdaság/gazdaság-főoldal.html">Gazdaság <i class="fa fa-caret-down "></i></a>
+      <div class="dropdown-container">
+        <!--Mezőgazdaság-->
+        <a class="dropwItem" href="../gazdaság/mezőgazdaság/mezőgazdaság.html">Mezőgazdaság</a>
+      </div>
+      <!--Éghajlat-->
+      <a href="../éghajlat/Éghajlat.html">Éghajlat</a>
+
+      <!--Gasztronómia-->
+      <a href="../gasztronómia/gasztronómia.html">Gasztronómia <i class="fa fa-caret-down"></i></a>
+      <div class="dropdown-container">
+        <!--Receptek-->
+        <a class="dropwItem" href="receptek/receptek.html">Receptek</a>
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+  <!--moblinézet-->
+
+  <!--open-->
+
+  <nav id="main">
+    <!--mobil nézetnél-->
+    <div id="bar">
+      <!-- a bar tartalmazza a hátteret-->
+      <div class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></div>
+      <!-- az openbtn tartalmazza a fa-bar méretét és színét-->
+    </div>
+  </nav>
+
+
+    <!-- cím  -->
+
+    <div class="cím">Gasztronómia </div>
+
+    <!-- wrapper  -->
+    <div class="wrapper">
+        <!-- header  -->
+        <header>
+
+        </header>
+        <!-- main  -->
+        <main>
+            <h1>Az olasz konyha</h1>
+            <p>
+                Az olasz konyha rendkívül változatos, és sokféle, a mediterrán éghajlaton megtermelt alapanyagot használ
+                fel.
+                Legismertebb ételei a különféle tészták (például spagetti, makaróni, lasagne, canelloni,
+                tortellini, tagliatelle stb.) és természetesen a pizza.
+                A pizza, amely eredetileg egy lepényféleség
+                volt, története az ókorra nyúlik vissza. A mai pizzát Nápolyban készítették először, a 19. század végén,
+                mégpedig olasz nemzeti színekben: zöld (bazsalikom), fehér (mozzarella) és piros (paradicsom) – ezt
+                ismerjük ma Margherita néven.
+                <br>
+                Emellett a „tenger gyümölcsei”, azaz a halak, rákok, kagylók is említést érdemelnek. A főzéshez
+                többnyire vajat és olivaolajat használnak, amelyek egészségesebbek, mint a napraforgóolaj vagy az állati
+                zsiradék.
+                <br>
+                Olasz konyhában sokféle fűszert használnak, a legismertebbek a bazsalikom, az ánizs, a kapribogyó, a
+                tárkony, a menta, az oregánó, a rozmaring, a kakukkfű, a zsálya és a sáfrány.
+
+
+            </p>
+
+            <p>
+            <h3>Néhány recept az említett ételekről:</h3>
+
+            </p>
+            <!-- gomb-link a recepthez  -->
+            <div class="gomb-link">
+                <a href="receptek.html">
+                    <button>Tovább a receptekhez </button>
+                </a>
+            </div>
+
+            <div class="fel">
+
+                <a href="#section01"><i class="fas fa-arrow-circle-up"></i></a>
+
+            </div>
+        </main>
+        <!-- main vége  -->
+
+    </div>
+    <!-- wrapper vége  -->
+
+    <script src="../menu.js"></script>
+
+</body>
+
+</html>

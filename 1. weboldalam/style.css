@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Crimson+Pro:ital,wght@0,200;1,200&family=Merriweather:wght@300&family=PT+Sans&family=Roboto:wght@100&display=swap');/*idézetek*/
+*{
+  margin: 0;
+}
+
+/*        -------------              ---  egészre hat  ---      -----------------           */
+.container{
+  width: 900px;
+  /*height: 4000px;*/
+  /*border: 1px solid black;*/
+  margin: 0 auto;
+}
+  
+#listak{
+  /*border: 1px solid rgb(110, 245, 32);*/
+  margin: 20px auto;
+  font-family: 'PT Sans', sans-serif;
+  color: #222;
+  list-style: square;
+}
+
+.dolt{
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-style: italic; 
+}
+
+.Reszek{
+  /*border: 1px solid rgb(246, 229, 71);*/
+  width: 550px;
+  margin: 30px auto;
+  color: #222;
+  
+}
+/*    szövegek    */
+.szoveg{
+  /*border: 1px solid rgb(245, 32, 32);*/
+  width: 550px; 
+  margin: 30px auto;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  color: #222;
+}
+
+/*    idézet    */
+
+.idezet{
+  border: 1px solid rgb(44, 43, 43); 
+  background-color: rgb(44, 43, 43); 
+  width: 700px; 
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+blockquote{
+  font-size: 40px;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  width: 600px;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 25px;
+  
+}
+
+blockquote::before{
+  font-family:'Abril Fatface';
+  content: '”';
+  color:white;
+  font-size: 70px;
+  position: absolute;
+  top: -15px;
+  left: 3px;
+}
+
+/*    cím    */
+.cim{
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+}
+/*    alcím    */
+.alcim{
+  font-size: 19px;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+/*              -----------                 ---fejléc---            --------------           */
+
+header{
+  width: 100%;
+  height: 230px; 
+  background: url('https://raw.githubusercontent.com/green-fox-academy/myfirstapp-syllabus/master/assets/first-website-header.png');
+  background-size: cover;
+  position: relative;
+}
+
+.fejlecSzoveg{
+  font-family: 'Abril Fatface';
+  position: absolute;
+  top: 145px;
+  left: 200px; 
+}
+
+.hello{
+  font-size: 20px; 
+  margin: 0; 
+}
+.name{
+  font-size: 50px;
+  margin: 0;
+  line-height: 40px;  
+}
+
+/*      --------           ---tartalom---       ---------------      */
+
+/*    ---első rész---   */
+
+
+.bold{
+  font-weight: bold;
+  color: black;
+}
+
+
+
+/*                                       ---második rész---               */
+/*    Noteble achievements    */
+
+
+
+
+
+/*                                       ---harmadik rész---               */
+/*    experience   */
+
+
+
+/*                                       ---negyedik rész---               */
+/*    formal training   */
+
+/*                                       ---ötödik rész---               */
+/*    vonal   */
+.vonal{
+  width: 730px;
+  height: 3px;
+  background:rgb(39, 39, 39);
+  margin-left: auto;
+  margin-right: auto;
+}
+

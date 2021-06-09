@@ -1,0 +1,28 @@
+.North{
+    border: 7px solid #4285f4;
+    width:300px;
+    margin-left:40%;
+  }
+  .South{
+    margin-top:7px;
+    border: 7px solid #4285f4;
+    width:300px;
+    margin-left:40%;
+  }
+  main div p{
+    color: white;
+    font-weight: bold;
+    font-family:Arial;
+    font-size:24px;
+    text-align:center;
+    margin:0;
+    padding: 35px;
+  }
+  
+  .red{
+    background: #E67676;
+  }
+  .rilght-blue{
+    background: #A9E6E6;
+  }
+  

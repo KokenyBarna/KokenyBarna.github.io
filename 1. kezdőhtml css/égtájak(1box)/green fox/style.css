@@ -1,0 +1,28 @@
+main{
+    border: 7px solid #4285f4;
+    width:300px;
+    margin-left:40%;
+    
+  }
+  main p{
+    color: white;
+    font-weight: bold;
+    font-family:Arial;
+    font-size:24px;
+    text-align:center;
+    margin:0;
+    padding: 50px;
+  }
+  
+  .red{
+    background: #E67676;
+  }
+  .yellow{
+    background: #F2F062;
+  }
+  .rilght-blue{
+    background: #A9E6E6;
+  }
+  .purple{
+    background: #7692E4;
+  }

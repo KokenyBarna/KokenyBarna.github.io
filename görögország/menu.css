@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+
+
+
+/*      ---------- menü------------     */
+#myTopnav {
+    
+    background: rgb(56, 110, 172);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0; 
+    z-index: 1;
+}
+
+
+#myTopnav::after{
+    content:'';
+    clear: both;
+    display: table;
+	
+}
+
+#myTopnav .has-submenu{
+	font-family: 'GFS Didot', serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 0px;
+    padding-left: 0px;
+    
+
+	
+}
+
+
+#myTopnav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 25px;
+	padding: 25px 15px;
+	border-top: solid white 3px;
+	border-bottom: solid white 3px;
+	
+    
+}
+
+#myTopnav a:hover {
+	background: rgb(250, 250, 250);
+	color: rgb(67, 154, 253);
+	border: solid rgb(28, 169, 251) 3px;
+	border-radius: 100%;
+}
+
+#myTopnav ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+#myTopnav>ul>li {
+    float: left;
+}
+
+
+
+  /*--------------------fa-bar => open block menu-----------------------*/
+.openbtn{
+    display: none;
+}
+
+.sidebar{
+    display: none;
+}
+
+
+
+
+
+
+/*--------------------resp. menü-----------------------*/
+@media(max-width: 900px){
+    
+    #myTopnav{
+         
+          display: none;
+      }
+  
+      #bar{
+          height: 50px;
+          background: rgb(61, 145, 255);
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+      }
+  
+      .openbtn{
+          color: white;
+          font-size: 30px;
+          margin-right: 25px;
+          display: flex;
+      }
+      
+    
+  
+      .sidebar{
+          display: block;
+      }
+  
+      .sidebar {
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 80%;
+          background: rgb(61, 145, 255);
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+          
+  }
+        
+        .sidebar a {
+          padding: 15px 8px 8px 30px;
+          text-decoration: none;
+          font-size: 25px;
+          color: rgb(255, 255, 255);
+          display: block;
+          line-height: 45px;
+  }
+        
+        .sidebar a:hover {
+          background: white;
+          color: rgb(68, 165, 255);
+        }
+        
+  
+        .sidebar .closebtn {
+          position: absolute;
+          top: 0;
+          right: 2px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+        
+        .menu{
+            border: none;
+            margin-top: 25px;
+        }
+  
+  
+        
+}       
+
+
+
+
+
+

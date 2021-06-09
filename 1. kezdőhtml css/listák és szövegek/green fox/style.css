@@ -1,0 +1,21 @@
+h1{
+    color:red;
+}
+h2{
+    color:blueviolet;
+}
+.squared{
+    list-style-type: square;
+}
+.Roman-number{
+    list-style-type: upper-roman;
+    color:rgb(251, 154, 214);
+    text-decoration: underline;
+}
+.black-color{
+    color: black;
+    text-decoration: underline;
+}
+div{
+    max-width:750px;
+}

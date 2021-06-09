@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <main>
+
+        <h1 id="title">My list</h1>
+        <div id="addList">
+
+            <input type="text" id="input">
+            <button id="addBtn">add</button>
+
+        </div>
+
+        <ul>
+
+        </ul>
+
+    </main>
+
+
+    <style>
+        * {
+            font-family: Arial;
+
+        }
+
+        body {
+            background: rgb(79, 179, 236);
+        }
+
+        main {
+            width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            border: solid 1px rgb(24, 165, 231);
+            background: white;
+            border-radius: 10px;
+        }
+
+        /*Title*/
+        #title {
+            text-align: center;
+        }
+
+        /* input and button*/
+        #addList {
+            display: flex;
+            justify-content: center;
+        }
+
+        #input {
+            border: solid 1px rgb(24, 165, 231);
+        }
+
+        #addBtn {
+            border: none;
+            background: rgb(24, 165, 231);
+            color: white;
+            padding: 10px 20px;
+        }
+
+        #addBtn:hover {
+            background: rgb(61, 163, 211);
+            color: white;
+        }
+
+        #input,
+        #addBtn {
+            font-size: 25px;
+        }
+
+        /* List*/
+
+        ul {
+            list-style: none;
+            line-height: 50px;
+        }
+    </style>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+        $('#addBtn').click(function () {
+            if ($('#input').val()) {
+                $("ul").append(`<li> ${$('#input').val()}</li>`);
+            }
+
+            else {
+                alert('empty input!')
+            }
+        });
+    </script>
+
+</body>
+
+</html>

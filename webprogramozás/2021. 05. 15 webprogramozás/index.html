@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mértékegység átváltás</title>
+</head>
+
+<body>
+    <form name="form1">
+        <fieldset class="MainFrom">
+            <!--mért. átváltó-->
+            <legend>Mértékegység átváltó</legend>
+
+
+            <!--farenheit-->
+            <label for="Farenheit">Farenheit</label>
+            <input type="number" id="faren" name="FARENHEIT" value="0">
+
+            <!--celsius-->
+            <label for="Celsius">to Celsius:</label>
+            <input type="number" id="cels" name="CELSIUS" value="0" readonly>
+
+            <!--button-->
+            <input class="gomb" type="button" value="Átváltás" onclick="return Ftoc();">
+
+
+        </fieldset>
+    </form>
+
+    <br><br>
+    <!--másik:
+
+    <form name="form1">
+        Farenheit: <input type="number"  id="faren" name="FARENHEIT" value="0">
+        to Celsius: <input type="number"  id="cels" name="CELSIUS" value="0" readonly>
+        <input type="button" value="Átváltás" onclick="return Ftoc();">
+
+    </form>
+    -->
+
+    <script src="atvalto.js"></script>
+
+</body>
+
+</html>

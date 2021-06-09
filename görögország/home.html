@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Görögország</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist\css\bootstrap-grid.css">
+    <link rel="stylesheet" href="fontawesome-free-5.13.1-web\css\all.css">
+    <link rel="stylesheet" href="logo.css">
+    <link rel="stylesheet" href="fader.css">
+
+</head>
+
+<body>
+    <section id="section01"> </section>
+
+
+    <!--alap nav-->
+
+    <nav class="topnav" id="myTopnav">
+
+        <ul>
+
+
+            <!--            Főoldal            -->
+            <!--has submenu-->
+            <li class="has-submenu"> <a href="#">Főoldal</a></li>
+
+
+
+            <!--            Szobrok            -->
+            <!--has submenu-->
+            <li class="has-submenu"><a href="#">Szobrok</a>
+
+                
+
+            </li>
+
+            <!--            Festmények            -->
+            <!--has submenu-->
+            <li class="has-submenu"><a href="#">Festmények</a></li>
+
+
+
+            <!--            Épületek            -->
+            <!--has submenu-->
+            <li class="has-submenu"><a href="#">Épületek</a>
+                
+            </li>
+
+            <div id="lion">
+
+                <img  src="11e.JPG" alt="">
+            </div>
+        </ul>
+
+
+    </nav>
+
+
+
+
+    <!--mobil nézet-->
+
+    <div id="mySidebar" class="sidebar">
+        <!--close-->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+        <div class="menu">
+
+            <!--Főoldal-->
+            <a href="#">Főoldal</a>
+
+            <!--Szobrok-->
+            <a href="#">Szobrok</a>
+            <div class="dropdown-container">
+                
+            </div>
+            <!--Festmények-->
+            <a href="#">Festmények</a>
+
+            <!--Épületek-->
+            <a href="#">Épületek</a>
+            <div class="dropdown-container">
+                
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <!--moblinézet-->
+
+    <!--open-->
+
+    <nav id="main">
+        <!--mobil nézetnél-->
+        <div id="bar">
+            <!-- a bar tartalmazza a hátteret-->
+            <div class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></div>
+            <!-- az openbtn tartalmazza a fa-bar méretét és színét-->
+        </div>
+    </nav>
+
+
+
+
+   <!-- cím  -->
+
+    <!-- wrapper  -->
+    <div class="wrapper1">
+        <!-- itt kezdődik a menü  -->
+
+        <!-- header  -->
+        <header>
+
+            <!--fader és slide(beuztatás) lehet választani -->
+            <div class="carousel fader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+
+                <!-- lefelenyíl -->
+                <a href="#masodik-oldal"><i class="fas fa-arrow-circle-down lefelé"></i></a>
+
+            </div>
+
+
+
+
+
+
+            <!--<img class="lion" src="11e.JPG" alt="">-->
+
+        </header>
+
+    </div>
+    <!-- main  -->
+    <main id="masodik-oldal">
+        <!-- bootstrap grid-->
+
+        <h1>Donec pretium sit amet dui quis efficitur</h1>
+        <div class="csillag"><i class="fab fa-critical-role"></i></div>
+        <div class="breakpoints">
+            <div class="d-block d-sm-none">XS</div>
+            <div class="d-none d-sm-block d-md-none">SM</div>
+            <div class="d-none d-md-block d-lg-none">MD</div>
+            <div class="d-none d-lg-block d-xl-none">LG</div>
+            <div class="d-none d-xl-block">XL</div>
+        </div>
+
+
+
+        <div class="container-fluid wrapper">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4 box-wrapper">
+                    <div class="box">
+                        <img src="képek/table-tenger.jpg" alt="">
+                        <div class="box-content">
+                            <h2 class="tablecim">Első</h2 class="tablecim">
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis facilisis leo id nulla
+                                laoreet ornare. Morbi facilisis et nulla nec feugiat. Cras auctor justo sit amet
+                                congue
+                                egestas. Donec pretium sit amet dui quis efficitur. Praesent bibendum pretium velit
+                                eget
+                                molestie. Aenean vel laoreet quam. Pellentesque habitant morbi tristique senectus et
+                                netus et malesuada fames ac turpis egestas. Nulla quis ultrices metus. Nulla vel
+                                libero
+                                non libero euismod bibendum. Proin fermentum gravida lacinia. Nullam at placerat
+                                quam.
+                                Aliquam sem eros, faucibus ut metus sit amet, tempus laoreet sem. Nullam quis tortor
+                                vel
+                                nulla auctor cursus id non lacus. In hac habitasse platea dictumst..</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 box-wrapper">
+                    <div class="box">
+                        <img src="képek/table-tengevirag.jpg" alt="">
+                        <div class="box-content">
+                            <h2 class="tablecim" class="line">Második</h2 class="tablecim">
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis facilisis leo id nulla
+                                laoreet ornare. Morbi facilisis et nulla nec feugiat. Cras auctor justo sit amet
+                                congue
+                                egestas. Donec pretium sit amet dui quis efficitur. Praesent bibendum pretium velit
+                                eget
+                                molestie. Aenean vel laoreet quam. Pellentesque habitant morbi tristique senectus et
+                                netus et malesuada fames ac turpis egestas. Nulla quis ultrices metus. Nulla vel
+                                libero
+                                non libero euismod bibendum. Proin fermentum gravida lacinia. Nullam at placerat
+                                quam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 box-wrapper">
+                    <div class="box">
+                        <img src="képek/table-szobor.jpg" alt="">
+                        <div class="box-content">
+                            <h2 class="tablecim">Harmadik</h2>
+                            <br>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis facilisis leo id nulla
+                                laoreet ornare. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 box-wrapper">
+                    <div class="box">
+                        <img src="képek/table-tenger2.jpg" alt="">
+                        <div class="box-content">
+                            <h2 class="tablecim">Negyedik</h2>
+                            <br>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis facilisis leo id nulla
+                                laoreet ornare. Morbi facilisis et nulla nec feugiat. Cras auctor justo sit amet
+                                congue
+                                egestas. Donec pretium sit amet dui quis efficitur. Praesent bibendum pretium velit
+                                eget
+                                molestie. Aenean vel laoreet quam. Pellentesque habitant morbi tristique senectus et
+                                netus et malesuada fames ac turpis egestas. Nulla quis ultrices metus. Nulla vel
+                                libero
+                                non libero euismod bibendum. Proin fermentum gravida lacinia. Nullam at placerat
+                                quam.
+                                Aliquam sem eros, faucibus ut metus sit amet, tempus laoreet sem. Nullam quis tortor
+                                vel
+                                nulla auctor cursus id non lacus. In hac habitasse platea dictumst. Vestibulum
+                                pharetra,
+                                risus sit amet pellentesque consectetur, mauris augue cursus dui, ut feugiat urna
+                                nisi
+                                at quam. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 box-wrapper">
+                    <div class="box">
+                        <img src="képek/table-tenger3.jpg" alt="">
+                        <div class="box-content">
+                            <h2 class="tablecim">Ötödik</h2>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis facilisis leo id nulla
+                                laoreet ornare. Morbi facilisis et nulla nec feugiat. Cras auctor justo sit amet
+                                congue
+                                egestas. Donec pretium sit amet dui quis efficitur. Praesent bibendum pretium velit
+                                eget
+                                molestie. Aenean vel laoreet quam. Pellentesque habitant morbi tristique senectus et
+                                netus et malesuada fames ac turpis egestas. Nulla quis ultrices metus. Nulla vel
+                                libero
+                                non libero euismod bibendum. Proin fermentum gravida lacinia. Nullam at placerat
+                                quam.
+                                Aliquam sem eros, faucibus ut metus sit amet, tempus laoreet sem. Nullam quis tortor
+                                vel
+                                nulla auctor cursus id non lacus. In hac habitasse platea dictumst. Vestibulum
+                                pharetra,
+                                risus sit amet pellentesque consectetur, mauris augue cursus dui, ut feugiat urna
+                                nisi
+                                at quam. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 box-wrapper">
+                    <div class="box">
+                        <img src="képek/table-virag.jpg" alt="">
+                        <div class="box-content">
+                            <h2 class="tablecim">Hatodik</h2>
+                            <br>
+                            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum
+                                has
+                                been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer
+                                took a
+                                galley of type and scrambled it to make a type specimen book. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        </div>
+        <div class="fel">
+
+            <a href="#section01"><i class="fas fa-arrow-circle-up"></i></a>
+
+        </div>
+    </main>
+
+
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>K.B | Freedom design</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis facilisis leo id nulla laoreet ornare. </p>
+
+            <ul class="socials">
+                <li><a href="#"></a><i class="fab fa-facebook-f"></i></li>
+                <li><a href="#"></a><i class="fab fa-twitter"></i></li>
+                <li><a href="#"></a><i class="fab fa-google-plus"></i></li>
+                <li><a target="no-target" href="https://www.youtube.com/watch?v=zdA3qZNH1vc"><i
+                            class="fab fa-youtube"></i></li></a>
+                <li><a href="https://github.com/jackie500"><i class="fab fa-github"></i></li></a>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021. designed by <span>KokenyBarna</span></p>
+        </div>
+    </footer>
+
+
+    <script src="menu.js"></script>
+</body>
+
+</html>

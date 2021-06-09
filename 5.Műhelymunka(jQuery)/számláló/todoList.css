@@ -1,0 +1,53 @@
+*{
+    font-family: Arial;
+    
+}
+
+body{
+    background: rgb(79, 179, 236);
+}
+
+main{
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border: solid 1px rgb(24, 165, 231);
+    background: white;
+    border-radius: 10px;
+}
+/*Title*/
+#title{
+    text-align: center;
+}
+/* input and button*/
+#addList{
+    display: flex;
+    justify-content: center;
+}
+
+#input{
+    border: solid 1px rgb(24, 165, 231);
+}
+
+#addBtn{
+    border: none;
+    background: rgb(24, 165, 231);
+    color: white;
+    padding: 10px 20px;
+}
+#addBtn:hover{
+    background: rgb(61, 163, 211);
+    color: white;
+}
+
+#input,#addBtn{
+    font-size: 25px;
+}
+
+/* List*/
+
+ul{
+    list-style: none;
+    line-height: 50px;
+}
