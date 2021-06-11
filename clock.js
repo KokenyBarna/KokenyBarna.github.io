@@ -21,19 +21,28 @@ function clock(){
     },1000);
 
     // köszönések
+    
     if(hours < 12){
         var greeting = "Good Morning " + name + "!";
+        $('body').css("background-image", "url('reggel.jpg')");
+        
     }
 
     if(hours >= 12 && hours <=18){
         var greeting = "Good Afternoon " + name + "!";
     }
-
+    
     if(hours >= 18 && hours <=24){
         var greeting = "Good Evening " + name + "!";
+
+         $('body').css("background-image", "url('estekép.jpg')");
     }
 
     document.getElementById("greeting").innerHTML = greeting;
+
+    
+
+    
 
 }
 // end of clock function

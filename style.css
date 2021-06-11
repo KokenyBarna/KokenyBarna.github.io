@@ -20,12 +20,38 @@ body{
 }
 
 
+
+
 @media(max-width: 1240px){
     body{
 
-        background-size:  1700px 1370px;
+        background-size:  1240px 1000px;   
     }
 }
+
+@media(max-width: 400px){
+    body{
+
+        background-size:  780px 640px;   
+    }
+}
+
+
+@media(max-width: 1024px){
+    body{
+
+        background-size: 2000px 1366px;   
+    }
+}
+
+@media(max-height: 812px){
+    body{
+
+        background-size:  850px 812px;   
+    }
+}
+
+
 
 
 /*      ---------- tartalom------------     */
@@ -141,7 +167,6 @@ main #cim{
 
 
 #myTopnav li:hover{
-    background: rgb(57, 151, 240);
     color: white;
     border-radius: 2px;
    
@@ -318,6 +343,28 @@ main #cim{
     }
 }
 
+@media(max-width: 320px){
+    .wrap{
+        margin-top: 45px;
+    }
+    
+    #clock{
+        font-size: 22px;
+    }
+    
+    #greeting{
+        font-size: 36px;
+        line-height: 55px;
+        margin-bottom: 10px;
+    }
+    
+    #clock span{
+        width: 55px;
+        line-height: 55px;
+        margin: 0 8px;
+    }
+}
+
 
 /* cím és github cím*/
 @media(max-width: 1600px){
@@ -387,9 +434,20 @@ main #cim{
         margin-top: 40px;
     }
 
-    .fa-file-code{
-        font-size: 20px;
+}
+
+@media(max-width: 320px){
+    
+
+    main #cim{
+        font-size: 45px;
     }
+    main #githubLink{
+        font-size: 15px;
+        width: 160px;
+        margin-top: 40px;
+    }
+
 }
 
 
