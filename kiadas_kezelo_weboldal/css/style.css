@@ -1,0 +1,553 @@
+/*=============== GOOGLE FONTS ===============*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Dongle:wght@300&family=Norican&family=Quicksand:wght@300&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+
+:root {
+    --header-height: 3rem;
+    /*========== Colors ==========*/
+    --text-color: rgb(24, 27, 31);
+    ;
+    /*========== Font and typography ==========*/
+    --font-family: 'Quicksand', sans-serif;
+    /*========== Font weight ==========*/
+    /*========== Margenes ==========*/
+    /*========== z index ==========*/
+}
+
+@media screen and (min-width: 968px) {
+     :root {
+        --biggest-font-size: ;
+        --h2-font-size: ;
+        --h3-font-size: ;
+        --normal-font-size: ;
+        --small-font-size: ;
+        --smaller-font-size: ;
+    }
+}
+
+
+/*=============== BASE ===============*/
+
+*,
+ ::before,
+ ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+
+/*=============== h1, h2, h3 beállítások ===============*/
+
+h1,
+h2,
+h3 {
+    color: var(--text-color);
+    font-weight: bolder;
+    color: var(--text-color);
+    line-height: 1.5;
+    /* border: red solid 1px;*/
+}
+
+
+/*=============== ELSŐ SZEKCIÓ ===============*/
+
+
+/*=============== NAV ===============*/
+
+.nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 60px;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background-color: rgb(36, 41, 46);
+    border-bottom: #cee7ff solid 1px;
+}
+
+
+/*=============== NAV LOGO ===============*/
+
+.nav_logo {
+    font-weight: bolder;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#nav_logo_R {
+    border: #0571ca 1px solid;
+    font-size: 1.5em;
+}
+
+
+/*=============== KÉP, LEÍRáS, GOMBOK(BEJELENTKEZÉS, REGISZTÁCIÓ) ===============*/
+
+.home_section {
+    /* 1 rem = 16 px */
+    margin-top: 3rem;
+    /* border: red solid 2px;*/
+    display: block;
+    min-height: 549px;
+    padding-left: 20px;
+    background-color: #ffffff;
+}
+
+.home_pick {
+    flex-grow: 1;
+    height: 280px;
+    width: 280px;
+    /*  border: rgb(81, 243, 60) solid 3px;*/
+    background: url('../pics/3.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*=============== LOGO NÉV, ÜDVÜZLÉS, BEJELENTKEZÉS & REGISZTÁCIÓ===============*/
+
+.home_data {
+    color: var(--text-color);
+    height: auto;
+    /*border: rgb(0, 9, 128) solid 3px;*/
+}
+
+
+/*=============== LOGO ===============*/
+
+.home_logo {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: var(--text-color);
+    /* border: rgb(30, 255, 0) solid 1px;*/
+}
+
+
+/*=============== ÜDVÖLÉS ===============*/
+
+.home_greeting {
+    margin-top: 20px;
+    /* border: rgb(30, 255, 0) solid 1px;*/
+}
+
+
+/*=============== BEJELENTKEZÉS & REGISZTÁCIÓ ===============*/
+
+
+/*
+.home_buttons {
+    border: red solid 1px; 
+}
+*/
+
+.home_buttons .Btn_Bejelentkezes,
+.Btn_Regisztacio {
+    margin-top: 20px;
+    display: block;
+    border-style: none;
+    font-weight: bolder;
+    border-radius: 8px;
+}
+
+.Btn_Bejelentkezes {
+    background-color: #10b668;
+    color: #ffffff;
+    height: 40px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.Btn_Bejelentkezes:hover {
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+}
+
+.Btn_Regisztacio {
+    margin-top: 8px;
+    background-color: rgb(255, 255, 255);
+    border: #10b668 1px solid;
+    color: #10b668;
+    height: 40px;
+    width: 130px;
+    cursor: pointer;
+}
+
+.Btn_Regisztacio:hover {
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+}
+
+@media screen and (min-width: 800px) {
+    .home_section {
+        display: flex;
+        min-height: 1000px;
+    }
+    .home_pick {
+        flex-grow: 1;
+        order: 2;
+        margin-left: 0px;
+    }
+    .home_data {
+        flex-grow: 2;
+        order: 1;
+        margin-left: 0px;
+    }
+    .home_logo {
+        margin-top: 100px;
+        font-size: 25px;
+    }
+    .home_greeting {
+        margin-top: 100px;
+        font-size: 40px;
+    }
+    .home_buttons .Btn_Bejelentkezes,
+    .Btn_Regisztacio {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Btn_Bejelentkezes {
+        font-size: 20px;
+        padding: 40px 100px;
+    }
+    .Btn_Regisztacio {
+        margin-top: 15x;
+        font-size: 20px;
+        padding: 40px 100px;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .home_section {
+        /*height: 300px;*/
+        min-height: 600px;
+    }
+    .home_pick {
+        margin-top: 10px;
+        margin-right: 150px;
+        height: 600px;
+        width: 100px;
+        flex-grow: 1;
+        order: 2;
+    }
+    .home_data {
+        flex-grow: 1;
+        order: 1;
+        margin-left: 200px;
+        height: auto;
+        width: 500px;
+    }
+    .home_logo {
+        margin-top: 180px;
+        font-size: 20px;
+    }
+    .home_greeting {
+        margin-top: 40px;
+        font-size: 45px;
+    }
+    .home_buttons .Btn_Bejelentkezes,
+    .Btn_Regisztacio {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Btn_Bejelentkezes {
+        font-size: 18px;
+        padding: 25px 80px;
+    }
+    .Btn_Regisztacio {
+        margin-top: 10px;
+        font-size: 18px;
+        padding: 25px 80px;
+    }
+    .nav_logo {
+        font-size: 20px;
+    }
+    .nav {
+        height: 60px;
+    }
+}
+
+
+/*=============== MÁSODIK SZEKCIÓ ===============*/
+
+.second_section {
+    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    height: 100%;
+    background: #10b668;
+    display: block;
+    /*border: rgb(43, 43, 43) solid 5px;*/
+}
+
+
+/*=============== hulláb díszítés ===============*/
+
+.secon_section_hullam {
+    position: relative;
+}
+
+.custom-shape-divider-top-1636999801 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1636999801 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 200px;
+    /* border: rgb(255, 149, 62) solid 5px;*/
+}
+
+.custom-shape-divider-top-1636999801 .shape-fill {
+    fill: #ffffff;
+}
+
+
+/** For mobile devices **/
+
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1636999801 svg {
+        width: calc(138% + 1.3px);
+        height: 100px;
+    }
+}
+
+
+/*=============== MÁSODIK SZEKCIÓ DOBOZOK ===============*/
+
+.second_Section_boxes {
+    margin-top: 50px;
+    display: flex;
+    /* border: blue solid 2px;*/
+    height: 1000px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.second_Section_Cim_szoveg {
+    color: rgb(36, 41, 46);
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.icon {
+    text-align: center;
+}
+
+.second_Section_leiras_szoveg {
+    color: rgb(36, 41, 46);
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.second_Section_elso {
+    height: 300px;
+    width: 300px;
+    background: white;
+    /*  border: rgb(247, 41, 41) solid 2px;*/
+    border-radius: 3%;
+    padding: 10px;
+}
+
+.second_Section_masodik {
+    height: 300px;
+    width: 300px;
+    background: white;
+    /* border: rgb(41, 247, 68) solid 2px;*/
+    border-radius: 3%;
+    padding: 10px;
+}
+
+.second_Section_harmadik {
+    height: 300px;
+    width: 300px;
+    background: white;
+    /*  border: rgb(255, 227, 68) solid 2px;*/
+    border-radius: 3%;
+    padding: 10px;
+}
+
+@media screen and (min-width: 1020px) {
+    .second_Section_boxes {
+        display: flex;
+        flex-direction: row;
+        height: 550px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .second_Section_elso,
+    .second_Section_masodik,
+    .second_Section_harmadik {
+        height: 450px;
+        width: 500px;
+        border-radius: 2%;
+    }
+    .second_Section_Cim_szoveg {
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .second_Section_leiras_szoveg {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+    #icon_meret {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+
+/*=============== MÁSODIK SZEKCIÓ vége ===============*/
+
+
+/*=============== Harmadik SZEKCIÓ  ===============*/
+
+
+/*=============== hullám díszítés ===============*/
+
+.Harmadik_Szekcio_hullam {
+    position: relative;
+    background: linear-gradient(140deg, #ffffff, #ffffff);
+    /* border: #2b2b2b solid 3px;*/
+}
+
+.Harmadik_Szekcio_hullam>.custom-shape-divider-top-1636999801 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.Harmadik_Szekcio_hullam>.custom-shape-divider-top-1636999801 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 200px;
+    /* border: rgb(45, 187, 253) solid 5px;*/
+}
+
+.Harmadik_Szekcio_hullam>.custom-shape-divider-top-1636999801 .shape-fill {
+    fill: #10b668;
+}
+
+
+/** For mobile devices **/
+
+@media (max-width: 767px) {
+    .Harmadik_Szekcio_hullam>.custom-shape-divider-top-1636999801 svg {
+        width: calc(138% + 1.3px);
+        height: 100px;
+    }
+}
+
+
+/*=============== Harmadik szekció hullám után===============*/
+
+.Harmadik_Szekcio {
+    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    height: 100%;
+    background: linear-gradient(140deg, #ffffff, #ffffff);
+    display: block;
+    /* border: rgb(243, 51, 51) solid 5px;*/
+}
+
+.Harmadik_Szekcio_szoveg {
+    /* border: rgb(243, 239, 31) solid 5px;*/
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #242729;
+}
+
+.Harmadik_Szekcio_szoveg_es_gomb_oldalra {
+    display: block;
+    /* border: rgb(243, 91, 31) solid 5px;*/
+    text-align: start;
+    width: 300px;
+}
+
+.Harmadik_Szekcio_szoveg_es_gomb_oldalra_p {
+    font-size: 30px;
+}
+
+.Harmadik_Szekcio_szoveg_es_gomb_oldalra_Btn_Regisztacio {
+    margin-top: 10px;
+    background: rgb(16, 182, 104);
+    color: #ffffff;
+    border: none;
+    height: 40px;
+    width: 130px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.Harmadik_Szekcio_szoveg_es_gomb_oldalra_Btn_Regisztacio:hover {
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+}
+
+@media screen and (min-width: 1020px) {
+    .Harmadik_Szekcio_szoveg {
+        height: 600px;
+        display: flex;
+    }
+    .Harmadik_Szekcio_szoveg_es_gomb_oldalra {
+        display: block;
+        width: 800px;
+    }
+    .Harmadik_Szekcio_szoveg_es_gomb_oldalra_p {
+        font-size: 60px;
+    }
+    .Harmadik_Szekcio_szoveg_es_gomb_oldalra_Btn_Regisztacio {
+        margin-top: 50px;
+        height: 50px;
+        width: 150px;
+        font-size: 20px;
+    }
+}
+
+
+/*=============== negyedik szekció hullám után===============*/
+
+.footer_section {
+    background-color: rgb(16, 182, 104);
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
