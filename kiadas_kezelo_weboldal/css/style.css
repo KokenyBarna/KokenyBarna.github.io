@@ -452,6 +452,31 @@ h3 {
     }
 }
 
+@media screen and (min-width: 1400px) {
+    .second_Section_boxes {
+        display: flex;
+        flex-direction: row;
+        height: 550px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .second_Section_elso,
+    .second_Section_masodik,
+    .second_Section_harmadik {
+        height: 500px;
+        width: 500px;
+        border-radius: 2%;
+    }
+    .second_Section_Cim_szoveg {
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .second_Section_leiras_szoveg {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+}
+
 
 /*=============== MÁSODIK SZEKCIÓ vége ===============*/
 
