@@ -127,10 +127,12 @@ h3 {
 }
 
 .home_pick {
+    margin-left: auto;
+    margin-right: auto;
     flex-grow: 1;
     height: 280px;
     width: 280px;
-    /*  border: rgb(81, 243, 60) solid 3px;*/
+    /* border: rgb(81, 243, 60) solid 3px;*/
     background: url('../pics/3.jpg') no-repeat;
     background-position: center;
     background-size: cover;
@@ -142,7 +144,7 @@ h3 {
 .home_data {
     color: var(--text-color);
     height: auto;
-    /*border: rgb(0, 9, 128) solid 3px;*/
+    /*  border: rgb(0, 9, 128) solid 3px;*/
 }
 
 
@@ -154,7 +156,7 @@ h3 {
     font-weight: bold;
     letter-spacing: 1.5px;
     color: var(--text-color);
-    /* border: rgb(30, 255, 0) solid 1px;*/
+    /*border: rgb(30, 255, 0) solid 1px;*/
 }
 
 
@@ -171,7 +173,7 @@ h3 {
 
 /*
 .home_buttons {
-    border: red solid 1px; 
+    border: red solid 1px;
 }
 */
 
@@ -216,24 +218,27 @@ h3 {
 @media screen and (min-width: 800px) {
     .home_section {
         display: flex;
-        min-height: 1000px;
+        min-height: 500px;
     }
     .home_pick {
+        margin-top: 10px;
+        min-width: 400px;
+        min-height: 400px;
         flex-grow: 1;
         order: 2;
-        margin-left: 0px;
     }
     .home_data {
-        flex-grow: 2;
+        flex-grow: 1;
         order: 1;
-        margin-left: 0px;
+        height: auto;
+        width: 500px;
     }
     .home_logo {
         margin-top: 100px;
         font-size: 25px;
     }
     .home_greeting {
-        margin-top: 100px;
+        margin-top: 50px;
         font-size: 40px;
     }
     .home_buttons .Btn_Bejelentkezes,
@@ -244,17 +249,24 @@ h3 {
         justify-content: center;
     }
     .Btn_Bejelentkezes {
-        font-size: 20px;
-        padding: 40px 100px;
+        height: 50px;
+        width: 130px;
     }
     .Btn_Regisztacio {
         margin-top: 15x;
-        font-size: 20px;
-        padding: 40px 100px;
+        height: 50px;
+        width: 130px;
     }
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 1130px) {
+    .home_pick {
+        max-width: 400px;
+        max-height: 400px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
     .home_section {
         /*height: 300px;*/
         min-height: 600px;
@@ -262,8 +274,8 @@ h3 {
     .home_pick {
         margin-top: 10px;
         margin-right: 150px;
-        height: 600px;
-        width: 100px;
+        min-height: 600px;
+        min-width: 500px;
         flex-grow: 1;
         order: 2;
     }
@@ -415,7 +427,7 @@ h3 {
     padding: 10px;
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 1100px) {
     .second_Section_boxes {
         display: flex;
         flex-direction: row;
@@ -426,21 +438,17 @@ h3 {
     .second_Section_elso,
     .second_Section_masodik,
     .second_Section_harmadik {
-        height: 450px;
-        width: 500px;
+        height: 350px;
+        width: 350px;
         border-radius: 2%;
     }
     .second_Section_Cim_szoveg {
-        font-size: 40px;
-        margin-top: 30px;
+        font-size: 28px;
+        margin-top: 18px;
     }
     .second_Section_leiras_szoveg {
-        font-size: 28px;
-        margin-top: 30px;
-    }
-    #icon_meret {
-        width: 350px;
-        height: 350px;
+        font-size: 20px;
+        margin-top: 18px;
     }
 }
 
