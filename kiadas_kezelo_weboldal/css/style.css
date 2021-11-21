@@ -456,24 +456,24 @@ h3 {
     .second_Section_boxes {
         display: flex;
         flex-direction: row;
-        height: 550px;
+        height: 500px;
         justify-content: space-around;
         align-items: center;
     }
     .second_Section_elso,
     .second_Section_masodik,
     .second_Section_harmadik {
-        height: 500px;
-        width: 500px;
+        height: 420px;
+        width: 420px;
         border-radius: 2%;
     }
     .second_Section_Cim_szoveg {
-        font-size: 40px;
-        margin-top: 30px;
+        font-size: 35px;
+        margin-top: 25px;
     }
     .second_Section_leiras_szoveg {
-        font-size: 28px;
-        margin-top: 30px;
+        font-size: 22px;
+        margin-top: 25px;
     }
 }
 
