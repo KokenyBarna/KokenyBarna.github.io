@@ -1,0 +1,363 @@
+/*=============== GOOGLE FONTS============*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand:wght@300&family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Dongle:wght@300&family=Norican&family=Quicksand:wght@300&display=swap');
+
+/*=============== COLORS============*/
+
+:root {
+    --text-color: rgb(39, 40, 43);
+    --white-color: rgb(250, 251, 255);
+    --body-color: rgb(236, 237, 245);
+    --container-color: rgb(239, 248, 252);
+}
+
+
+/**
+*?==============================================
+ *                                            *
+ **             *, body                       *            
+ *                                            *
+*?==============================================
+*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 95vh;
+}
+
+
+/*=============== ELSŐ SZEKCIÓ ===============*/
+
+
+/*=============== NAV ===============*/
+
+.nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 60px;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background-color: rgb(36, 41, 46);
+    /*border-bottom: #cee7ff solid 1px;*/
+}
+
+
+/*=============== NAV LOGO ===============*/
+
+.nav_logo {
+    font-weight: bolder;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#nav_logo_R {
+    border: #0571ca 1px solid;
+    font-size: 1.5em;
+}
+
+
+/**
+*?==============================================
+ *                                            *
+ **              USERNAME / PASSWORD          *            
+ *                                            *
+*?==============================================
+*/
+
+
+/**!megvátoztattam a body.t main-re */
+
+main {
+    margin-top: 40px;
+    display: grid;
+    place-items: center;
+    height: 92.3vh;
+    background: url('../pics/hegy6.jpg');
+    background-size: cover;
+    background-position: center;
+    /*  border: rgb(0, 238, 255) solid 1px; */
+}
+
+.cim {
+    margin-bottom: 20px;
+    color: rgb(58, 71, 77);
+}
+
+.UserName_Password {
+    /*border: 2px solid rgb(21, 106, 233);*/
+    padding: 120px 30px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+
+/**
+*?==============================================
+ *                                            *
+ **              INPUT USERNAME               *            
+ *                                            *
+*?==============================================
+*/
+
+
+/**! a szélesség mindig az aktuális szülő div mérete lesz, 
+ * ha nincs beállítva saját méret. 
+ *! Most be van állítva!
+ **/
+
+.UserName_div {
+    position: relative;
+    background-color: var(--container-color);
+    padding: 20px 20px;
+    border-radius: 5px;
+    display: flex;
+    width: 280px;
+    align-items: center;
+    column-gap: 12px;
+    /*border: #73ff00 solid 1px;*/
+}
+
+.input_user_icon,
+.input_userName {
+    color: var(--text-color);
+    /*border: #00b7ff solid 2px;*/
+}
+
+.input_userName {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    z-index: 1;
+    /*border: rgb(190, 73, 236) solid 1px;*/
+}
+
+.input_userName::placeholder {
+    color: var(--text-color);
+    /* font-size: 10px;*/
+}
+
+
+/**
+*?==============================================
+ *                                            *
+ **              END OF INPUT USERNAME        *            
+ *                                            *
+*?==============================================
+*/
+
+
+/**
+*?==============================================
+ *                                            *
+ **              INPUT PASSWORD               *            
+ *                                            *
+*?==============================================
+*/
+
+
+/**? 1rem = 16px */
+
+
+/**! a width:280-ra van állítva. Alapértelmezetten nem kellene beállítani,
+ *! ha nem szeretnénk
+ **/
+
+.Password_div {
+    margin-top: 30px;
+    position: relative;
+    background-color: var(--container-color);
+    padding: 20px 20px;
+    width: 280px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    /* border: #ff0000 solid 2px;*/
+}
+
+.input_lock_icon,
+.input_hideEye_icon {
+    font-size: 20px;
+    z-index: 1;
+}
+
+.input_lock_icon,
+.input_password {
+    color: var(--text-color);
+    /*border: rgb(255, 251, 0) solid 1px;*/
+}
+
+
+/**! a position-t absolute-ra állítottam,
+ *! hogy a Password_div widht: ...px- jéhez igazodjon
+ **/
+
+.input_hideEye_icon {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 19px;
+    /*  border: rgb(255, 136, 0) solid 1px;*/
+}
+
+.input_password {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    z-index: 1;
+    /*border: rgb(190, 73, 236) solid 1px;*/
+}
+
+.input_password::placeholder {
+    color: var(--text-color);
+}
+
+.input_overlay {
+    width: 32px;
+    height: 32px;
+    background-color: rgb(16, 182, 104);
+    position: absolute;
+    right: 14.4px;
+    border-radius: 50%;
+    z-index: 0;
+    transition: .4s ease-in-out;
+    /* border: rgb(102, 255, 0) solid 1px;*/
+}
+
+
+/**
+*?==============================================
+ *                                            *
+ **             MEDIA SCREEN                  *            
+ *                                            *
+*?==============================================
+*/
+
+@media screen and (max-width: 405px) {
+    .Password_div {
+        width: 230px;
+    }
+    .input_password {
+        font-size: 12px;
+    }
+    .input_overlay {
+        width: 25px;
+        height: 25px;
+    }
+    .input_hideEye_icon {
+        font-size: 15px;
+    }
+    .UserName_div {
+        width: 230px;
+    }
+    .input_userName {
+        font-size: 12px;
+    }
+    main {
+        height: 88.5vh;
+    }
+}
+
+
+/**=========== Transition effect============== */
+
+
+/**
+ *?=========================================================
+                                          
+ *? A hide icon megnyomása után láthatóvá válik a beírt szöveg.
+ *? És megvátozik a háttér és betű színe is.
+ *? js-ben hoztam létre a overlay-content -t
+ 
+ *?==========================================================
+*/
+
+.overlay-content {
+    width: 100%;
+    height: 100%;
+    border-radius: 6.4px;
+    right: 0;
+    /* border: rgb(0, 68, 255) solid 1px;*/
+}
+
+.overlay-content~.input_lock_icon {
+    color: var(--container-color);
+    /* border: red solid 1px;*/
+}
+
+.overlay-content~.input_password,
+.overlay-content~.input_password::placeholder {
+    color: white;
+    /*border: rgb(255, 187, 0) solid 1px;*/
+}
+
+
+/**
+*?==============================================
+ *                                            *
+ **         END OF INPUT PASSWORD             *            
+ *                                            *
+*?==============================================
+*/
+
+
+/**
+*?==============================================
+ *                                            *
+ **         Bejelentkezés button            *            
+ *                                            *
+*?==============================================
+*/
+
+.btn_bejelentkezes {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(16, 182, 104);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.btn_bejelentkezes:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(16, 182, 104);
+    transition: all 0.5s;
+}
+
+
+/**
+*?==============================================
+ *                                            *
+ **              FOOTER                       *            
+ *                                            *
+*?==============================================
+*/
+
+.footer_section {
+    background-color: rgb(16, 182, 104);
+    height: 35px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
