@@ -16,7 +16,7 @@
 /**
 *?==============================================
  *                                            *
- **             *, body                       *            
+ **              ,  *,                        *            
  *                                            *
 *?==============================================
 */
@@ -26,10 +26,6 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-body {
-    height: 95vh;
 }
 
 
@@ -79,17 +75,19 @@ body {
 */
 
 
-/**!megvátoztattam a body.t main-re */
+/**!megvátoztattam a body.t #kezpso_resz-re */
 
-main {
+#kezpso_resz {
     margin-top: 40px;
-    display: grid;
-    place-items: center;
-    height: 92.3vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
     background: url('../pics/hegy3.jpg');
     background-size: cover;
     background-position: center;
-    /*  border: rgb(0, 238, 255) solid 1px; */
+    /*border: rgb(0, 4, 255) solid 1px;*/
 }
 
 .cim {
@@ -98,8 +96,8 @@ main {
 }
 
 .UserName_Password {
-    /*border: 2px solid rgb(21, 106, 233);*/
-    padding: 120px 30px;
+    /* border: 2px solid rgb(21, 106, 233);*/
+    padding: 60px 30px;
     border-radius: 8px;
     background-color: white;
 }
@@ -237,41 +235,7 @@ main {
     border-radius: 50%;
     z-index: 0;
     transition: .4s ease-in-out;
-    /* border: rgb(102, 255, 0) solid 1px;*/
-}
-
-
-/**
-*?==============================================
- *                                            *
- **             MEDIA SCREEN                  *            
- *                                            *
-*?==============================================
-*/
-
-@media screen and (max-width: 405px) {
-    .Password_div {
-        width: 230px;
-    }
-    .input_password {
-        font-size: 12px;
-    }
-    .input_overlay {
-        width: 25px;
-        height: 25px;
-    }
-    .input_hideEye_icon {
-        font-size: 15px;
-    }
-    .UserName_div {
-        width: 230px;
-    }
-    .input_userName {
-        font-size: 12px;
-    }
-    main {
-        height: 88.5vh;
-    }
+    /* border: rgb(255, 0, 191) solid 1px;*/
 }
 
 
@@ -293,7 +257,7 @@ main {
     height: 100%;
     border-radius: 6.4px;
     right: 0;
-    /* border: rgb(0, 68, 255) solid 1px;*/
+    /*border: rgb(0, 68, 255) solid 1px;*/
 }
 
 .overlay-content~.input_lock_icon {
@@ -304,7 +268,7 @@ main {
 .overlay-content~.input_password,
 .overlay-content~.input_password::placeholder {
     color: white;
-    /*border: rgb(255, 187, 0) solid 1px;*/
+    /* border: rgb(255, 187, 0) solid 1px;*/
 }
 
 
@@ -343,6 +307,22 @@ main {
     transition: all 0.5s;
 }
 
+.vissza>a {
+    background: rgb(16, 182, 104);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    text-decoration: none;
+}
+
+.vissza_nyil {
+    font-size: 20px;
+    color: white;
+}
+
 
 /**
 *?==============================================
@@ -352,7 +332,7 @@ main {
 *?==============================================
 */
 
-.footer_section {
+#footer_section {
     background-color: rgb(16, 182, 104);
     height: 35px;
     color: white;
@@ -360,4 +340,46 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 15px;
+    /* border: 1px solid red;*/
+}
+
+
+/**
+*?==============================================
+ *                                            *
+ **             MEDIA SCREEN                  *            
+ *                                            *
+*?==============================================
+*/
+
+@media screen and (max-width: 405px) {
+    .UserName_Password {
+        padding: 80px 30px;
+    }
+    .UserName_div {
+        width: 230px;
+        height: 50px;
+    }
+    .input_userName {
+        font-size: 12px;
+    }
+    .Password_div {
+        width: 230px;
+        height: 50px;
+    }
+    .input_password {
+        font-size: 12px;
+    }
+    .input_hideEye_icon {
+        font-size: 15px;
+        right: 22px;
+    }
+    .cim {
+        font-size: 23px;
+    }
+    .btn_bejelentkezes {
+        margin-top: 20px;
+        padding: 8px 15px;
+        font-size: 12px;
+    }
 }
