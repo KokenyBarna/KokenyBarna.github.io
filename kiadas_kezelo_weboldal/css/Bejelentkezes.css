@@ -6,7 +6,7 @@
 /*=============== COLORS============*/
 
 :root {
-    --text-color: rgb(39, 40, 43);
+    --text-color: rgb(63, 68, 77);
     --white-color: rgb(250, 251, 255);
     --body-color: rgb(236, 237, 245);
     --container-color: rgb(239, 248, 252);
@@ -92,7 +92,7 @@
 
 .cim {
     margin-bottom: 20px;
-    color: rgb(58, 71, 77);
+    color: rgb(79, 86, 92);
 }
 
 .UserName_Password {
@@ -129,7 +129,10 @@
     /*border: #73ff00 solid 1px;*/
 }
 
-.input_user_icon,
+.input_user_icon {
+    color: #9bb9c0;
+}
+
 .input_userName {
     color: var(--text-color);
     /*border: #00b7ff solid 2px;*/
@@ -188,16 +191,19 @@
     /* border: #ff0000 solid 2px;*/
 }
 
+.input_lock_icon {
+    color: #9bb9c0;
+}
+
+.input_password {
+    color: var(--text-color);
+    /*border: rgb(255, 251, 0) solid 1px;*/
+}
+
 .input_lock_icon,
 .input_hideEye_icon {
     font-size: 20px;
     z-index: 1;
-}
-
-.input_lock_icon,
-.input_password {
-    color: var(--text-color);
-    /*border: rgb(255, 251, 0) solid 1px;*/
 }
 
 
