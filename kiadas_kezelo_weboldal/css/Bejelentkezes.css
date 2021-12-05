@@ -40,7 +40,7 @@
     right: 0;
     padding-left: 60px;
     width: 100%;
-    height: 40px;
+    height: 50px;
     position: fixed;
     z-index: 1000;
     display: flex;
@@ -78,7 +78,7 @@
 /**!megvátoztattam a body.t #kezpso_resz-re */
 
 #kezpso_resz {
-    margin-top: 40px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     flex-direction: column;
